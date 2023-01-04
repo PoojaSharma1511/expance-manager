@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/* Desktop View */
+
+nav{
+    background-color: #185ADB;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: -2px 21px 51px -8px rgba(0,0,0,0.52); */
+}
+
+.container{
+    background-color: #D2D3C9;
+}    
+
+.main-section{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.balance{
+    position: relative;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #E4F9FF;
+    height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-bal::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 10px;
+    background-color: #068B78;
+    right: 0;
+}
+
+.balance i{
+    position: absolute;
+    font-size: 100px;
+    left: 40px;
+    color: #068B78;
+    opacity: 0.2;
+}
+
+
+.balance h1{
+    font-size: 50px;
+    color: #1C6758;
+    transition: all 0.5s ease-in-out ;
+}
+
+.balance h1:hover{
+    font-size: 75px;
+    margin-left: 150px;
+}
+
+.balance p{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.transaction-form{
+    border-radius: 5px;
+    padding: 25px;
+    width: 50%;
+    height: 200px;
+    background-color: #E4F9FF;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.transaction-form input{
+    width: 100%;
+    padding: 8px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+.transaction-form input:focus{
+    outline: none;
+}
+
+.transaction-form button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #068B78;
+    border: none;
+    margin-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-floppy-disk{
+    margin-left: 20px;
+}
+
+.transaction-form button:hover{
+    background-color: #185ADB;
+}
+
+#current-status{
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#income{
+    background-color: #068B78;
+    color: #EEF2E6;
+    box-shadow: none;
+}
+
+#income h1{
+    color: #EEF2E6;
+}
+
+#expense{
+    background-color: #FA163F;
+    color: #EEF2E6;
+    box-shadow: none;
+}
+
+#expense h1{
+    color: #EEF2E6;
+}
+
+.list-group{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.list-item{
+    width: 80%;
+    background-color: #E4F9FF;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid gray ;
+    text-align: center;
+}
+
+.list-item span{
+    width: 100%;
+}
+
+.list-item h4{
+    font-size: 22px;
+
+}
+
+
+.list-item h3{
+    padding: 10px;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.expense-transaction{
+    background-color: #FA163F;
+    text-align: center;
+}
+
+.income-transaction{
+    background-color: #068B78;
+    text-align: center;
+}
+
+.delbtn{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-color: #FA163F;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.delbtn:hover{
+    font-size: 24px;
+}
+
+.notransaction{
+    text-align: center;
+}
+
+
+/* Mobile View */
+
+@media (max-width:768px) {
+
+    .balance{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .transaction-form{
+        width: 100%;
+        margin: 10px;
+    }
+
+  
+
+}
